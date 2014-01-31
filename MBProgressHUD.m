@@ -1055,11 +1055,11 @@ static const CGFloat kDetailsLabelFontSize = 12.f;
 @interface MMBlurView ()
 
 @property(nonatomic, MB_WEAK) UIView *parent;
-@property(nonatomic, MB_WEAK) CGPoint location;
-@property(nonatomic, MB_WEAK) MMBlurType blurType;
+@property(nonatomic) CGPoint location;
+@property(nonatomic) MMBlurType blurType;
 @property(nonatomic, MB_STRONG) MMBlurComponents *colorComponents;
 @property(nonatomic, MB_STRONG) UIImageView *backgroundImageView;
-@property(nonatomic, MB_WEAK) dispatch_source_t timer;
+@property(nonatomic) dispatch_source_t timer;
 //Property with retain or strong attribute must be of object type
 @end
 
